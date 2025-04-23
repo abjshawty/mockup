@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cigares Élégance - Votre cave à cigares premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <h1>Cigares Élégance</h1>
+                </div>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#" class="active">Accueil</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#products">Produits</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>L'art du cigare à portée de main</h2>
+                <p>Découvrez notre sélection exclusive de cigares premium et d'accessoires de qualité</p>
+                <a href="#products" class="btn btn-primary">Explorer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Nos Catégories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="/api/placeholder/400/300" alt="Cigares">
+                    <h3>Cigares</h3>
+                    <p>Notre sélection de cigares premium du monde entier</p>
+                </div>
+                <div class="category-card">
+                    <img src="/api/placeholder/400/300" alt="Accessoires">
+                    <h3>Accessoires</h3>
+                    <p>Tout ce dont vous avez besoin pour profiter de vos cigares</p>
+                </div>
+                <div class="category-card">
+                    <img src="/api/placeholder/400/300" alt="Chichas">
+                    <h3>Chichas</h3>
+                    <p>Des chichas élégantes pour des moments conviviaux</p>
+                </div>
+                <div class="category-card">
+                    <img src="/api/placeholder/400/300" alt="Cigarettes">
+                    <h3>Cigarettes</h3>
+                    <p>Cigarettes de qualité supérieure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="cigares">Cigares</button>
+                <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+                <button class="filter-btn" data-filter="chichas">Chichas</button>
+                <button class="filter-btn" data-filter="cigarettes">Cigarettes</button>
+            </div>
+            <div class="products-grid">
+                <!-- Cigares -->
+                <div class="product-card" data-category="cigares">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Cohiba Robusto">
+                        <div class="product-badge">Populaire</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cohiba Robusto</h3>
+                        <p class="product-description">Cigare cubain de qualité exceptionnelle</p>
+                        <div class="product-price">15 000 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="1" data-name="Cohiba Robusto"
+                                data-price="15000">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cigares">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Montecristo No. 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Montecristo No. 2</h3>
+                        <p class="product-description">Un classique cubain en forme de torpille</p>
+                        <div class="product-price">12 500 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="2" data-name="Montecristo No. 2"
+                                data-price="12500">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accessoires -->
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Humidor en Cèdre">
+                    </div>
+                    <div class="product-info">
+                        <h3>Humidor en Cèdre</h3>
+                        <p class="product-description">Cave à cigares en bois de cèdre, capacité 50 cigares</p>
+                        <div class="product-price">75 000 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="3" data-name="Humidor en Cèdre"
+                                data-price="75000">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Coupe-cigare Premium">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coupe-cigare Premium</h3>
+                        <p class="product-description">Coupe-cigare en acier inoxydable de qualité supérieure</p>
+                        <div class="product-price">20 000 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="4" data-name="Coupe-cigare Premium"
+                                data-price="20000">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chichas -->
+                <div class="product-card" data-category="chichas">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Chicha Khalil Mamoon">
+                        <div class="product-badge">Nouveau</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chicha Khalil Mamoon</h3>
+                        <p class="product-description">Chicha traditionnelle égyptienne en laiton</p>
+                        <div class="product-price">50 000 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="5" data-name="Chicha Khalil Mamoon"
+                                data-price="50000">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="chichas">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Tabac pour Chicha Al Fakher">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tabac pour Chicha Al Fakher</h3>
+                        <p class="product-description">Tabac aromatisé pour chicha, saveur pomme</p>
+                        <div class="product-price">7 500 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="6"
+                                data-name="Tabac pour Chicha Al Fakher" data-price="7500">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cigarettes -->
+                <div class="product-card" data-category="cigarettes">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Cigarettes Marlboro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cigarettes Marlboro</h3>
+                        <p class="product-description">Paquet de 20 cigarettes Marlboro</p>
+                        <div class="product-price">6 000 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="7" data-name="Cigarettes Marlboro"
+                                data-price="6000">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cigarettes">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/300" alt="Cigarettes Dunhill">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cigarettes Dunhill</h3>
+                        <p class="product-description">Paquet de 20 cigarettes Dunhill</p>
+                        <div class="product-price">7 000 FCFA</div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-secondary add-to-cart" data-id="8" data-name="Cigarettes Dunhill"
+                                data-price="7000">
+                                <i class="fas fa-shopping-cart"></i> Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Notre boutique">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">À propos de Cigares Élégance</h2>
+                    <p>Fondée en 2010, Cigares Élégance est votre destination privilégiée pour les cigares de qualité et
+                        les accessoires associés. Notre passion pour l'art du cigare nous pousse à sélectionner les
+                        meilleurs produits du monde entier.</p>
+                    <p>Notre équipe d'experts est à votre disposition pour vous conseiller dans le choix de vos cigares
+                        et vous guider dans l'entretien de votre collection.</p>
+                    <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>45 Boulevard Latrille, Cocody, Abidjan</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+225 07 08 09 10 11</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@cigares-elegance.ci</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lun-Sam: 10h-19h, Dim: Fermé</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message">Votre panier est vide</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">0,00 €</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Passer à la caisse</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal checkout-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Finaliser votre commande</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <h4>Informations de livraison</h4>
+                    <div class="form-group">
+                        <label for="checkout-name">Nom complet</label>
+                        <input type="text" id="checkout-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-email">Email</label>
+                        <input type="email" id="checkout-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-phone">Téléphone</label>
+                        <input type="tel" id="checkout-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-address">Adresse</label>
+                        <input type="text" id="checkout-address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkout-city">Ville</label>
+                            <input type="text" id="checkout-city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-zip">Code postal</label>
+                            <input type="text" id="checkout-zip" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout-country">Pays</label>
+                        <select id="checkout-country" required>
+                            <option value="">Sélectionnez un pays</option>
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="SN">Sénégal</option>
+                            <option value="ML">Mali</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="GH">Ghana</option>
+                            <option value="TG">Togo</option>
+                        </select>
+                    </div>
+
+                    <h4>Méthode de paiement</h4>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" name="payment" id="payment-visa" value="visa" checked>
+                            <label for="payment-visa">
+                                <i class="fab fa-cc-visa"></i>
+                                <span>Carte Visa</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" name="payment" id="payment-orange" value="orange">
+                            <label for="payment-orange">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Orange Money</span>
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" name="payment" id="payment-wave" value="wave">
+                            <label for="payment-wave">
+                                <i class="fas fa-wave-square"></i>
+                                <span>Wave</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="visa-details payment-details active" id="visa-details">
+                        <div class="form-group">
+                            <label for="card-number">Numéro de carte</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="card-expiry">Date d'expiration</label>
+                                <input type="text" id="card-expiry" placeholder="MM/AA">
+                            </div>
+                            <div class="form-group">
+                                <label for="card-cvv">CVV</label>
+                                <input type="text" id="card-cvv" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="orange-details payment-details" id="orange-details">
+                        <div class="form-group">
+                            <label for="orange-number">Numéro Orange Money</label>
+                            <input type="text" id="orange-number" placeholder="+33 6 12 34 56 78">
+                        </div>
+                    </div>
+
+                    <div class="wave-details payment-details" id="wave-details">
+                        <div class="form-group">
+                            <label for="wave-number">Numéro Wave</label>
+                            <input type="text" id="wave-number" placeholder="+33 6 12 34 56 78">
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <h4>Résumé de la commande</h4>
+                        <div class="order-items">
+                            <!-- Order summary will be dynamically added here -->
+                        </div>
+                        <div class="order-total">
+                            <span>Total:</span>
+                            <span class="checkout-total-amount">0,00 €</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary place-order-btn">Commander</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal confirmation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Commande confirmée</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-message">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Merci pour votre commande!</h4>
+                    <p>Votre commande a été traitée avec succès. Un email de confirmation a été envoyé à votre adresse.
+                    </p>
+                    <p>Numéro de commande: <span class="order-number"></span></p>
+                </div>
+                <button class="btn btn-primary continue-shopping-btn">Continuer vos achats</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-about">
+                    <h3>Cigares Élégance</h3>
+                    <p>Votre boutique spécialisée dans les cigares, cigarettes et chichas de qualité.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue des Cigares, 75001 Paris</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@cigares-elegance.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cigares Élégance Abidjan. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Conditions générales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Navigation Toggle
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const overlay = document.querySelector('.overlay');
+
+            mobileMenuToggle.addEventListener('click', function () {
+                mobileNav.classList.toggle('active');
+                overlay.classList.toggle('active');
+            });
+
+            // Close mobile navigation when clicking on the overlay
+            overlay.addEventListener('click', function () {
+                mobileNav.classList.remove('active');
+                cartSidebar.classList.remove('active');
+                checkoutModal.classList.remove('active');
+                confirmationModal.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+
+            // Product Filtering
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to current button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    productCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Quantity Selector
+            const minusButtons = document.querySelectorAll('.quantity-btn.minus');
+            const plusButtons = document.querySelectorAll('.quantity-btn.plus');
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+
+            minusButtons.forEach((button, index) => {
+                button.addEventListener('click', function () {
+                    const input = quantityInputs[index];
+                    let value = parseInt(input.value);
+                    if (value > 1) {
+                        value--;
+                        input.value = value;
+                    }
+                });
+            });
+
+            plusButtons.forEach((button, index) => {
+                button.addEventListener('click', function () {
+                    const input = quantityInputs[index];
+                    let value = parseInt(input.value);
+                    value++;
+                    input.value = value;
+                });
+            });
+
+            // Cart Functionality
+            const cartIcon = document.querySelector('.cart-icon');
+            const cartSidebar = document.querySelector('.cart-sidebar');
+            const closeCart = document.querySelector('.close-cart');
+            const cartItems = document.querySelector('.cart-items');
+            const cartCount = document.querySelector('.cart-count');
+            const totalAmount = document.querySelector('.total-amount');
+            const checkoutBtn = document.querySelector('.checkout-btn');
+            const emptyCartMessage = document.querySelector('.empty-cart-message');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+            let cart = [];
+
+            // Open cart sidebar
+            cartIcon.addEventListener('click', function () {
+                cartSidebar.classList.add('active');
+                overlay.classList.add('active');
+            });
+
+            // Close cart sidebar
+            closeCart.addEventListener('click', function () {
+                cartSidebar.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+
+            // Add to cart functionality
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const productId = this.getAttribute('data-id');
+                    const productName = this.getAttribute('data-name');
+                    const productPrice = parseFloat(this.getAttribute('data-price'));
+                    const quantityInput = this.parentElement.querySelector('.quantity-input');
+                    const quantity = parseInt(quantityInput.value);
+
+                    // Check if product already exists in cart
+                    const existingItem = cart.find(item => item.id === productId);
+
+                    if (existingItem) {
+                        existingItem.quantity += quantity;
+                    } else {
+                        cart.push({
+                            id: productId,
+                            name: productName,
+                            price: productPrice,
+                            quantity: quantity
+                        });
+                    }
+
+                    // Update cart UI
+                    updateCart();
+
+                    // Show cart sidebar
+                    cartSidebar.classList.add('active');
+                    overlay.classList.add('active');
+
+                    // Reset quantity input
+                    quantityInput.value = 1;
+                });
+            });
+
+            // Update cart UI
+            function updateCart() {
+                // Clear cart items
+                cartItems.innerHTML = '';
+
+                if (cart.length === 0) {
+                    emptyCartMessage.style.display = 'block';
+                    checkoutBtn.disabled = true;
+                } else {
+                    emptyCartMessage.style.display = 'none';
+                    checkoutBtn.disabled = false;
+
+                    // Add cart items
+                    cart.forEach(item => {
+                        const cartItem = document.createElement('div');
+                        cartItem.classList.add('cart-item');
+                        cartItem.innerHTML = `
+                            <div class="cart-item-info">
+                                <h4>${item.name}</h4>
+                                <p>${item.price.toLocaleString()} FCFA x ${item.quantity}</p>
+                            </div>
+                            <div class="cart-item-actions">
+                                <span>${(item.price * item.quantity).toLocaleString()} FCFA</span>
+                                <button class="remove-item" data-id="${item.id}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        `;
+                        cartItems.appendChild(cartItem);
+                    });
+
+                    // Add event listeners to remove buttons
+                    const removeButtons = document.querySelectorAll('.remove-item');
+                    removeButtons.forEach(button => {
+                        button.addEventListener('click', function () {
+                            const itemId = this.getAttribute('data-id');
+                            cart = cart.filter(item => item.id !== itemId);
+                            updateCart();
+                        });
+                    });
+                }
+
+                // Update cart count
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = totalItems;
+
+                // Update total amount
+                const total = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+                totalAmount.textContent = total.toLocaleString() + ' FCFA';
+
+                // Update checkout form total
+                if (document.querySelector('.checkout-total-amount')) {
+                    document.querySelector('.checkout-total-amount').textContent = total.toLocaleString() + ' FCFA';
+                }
+            }
+
+            // Checkout Modal
+            const checkoutModal = document.querySelector('.checkout-modal');
+            const closeCheckoutModal = document.querySelector('.checkout-modal .close-modal');
+            const checkoutForm = document.getElementById('checkout-form');
+            const orderItems = document.querySelector('.order-items');
+
+            // Open checkout modal
+            checkoutBtn.addEventListener('click', function () {
+                // Populate order summary
+                orderItems.innerHTML = '';
+                cart.forEach(item => {
+                    const orderItem = document.createElement('div');
+                    orderItem.classList.add('order-item');
+                    orderItem.innerHTML = `
+                        <span>${item.name} x ${item.quantity}</span>
+                        <span>${(item.price * item.quantity).toLocaleString()} FCFA</span>
+                    `;
+                    orderItems.appendChild(orderItem);
+                });
+
+                cartSidebar.classList.remove('active');
+                checkoutModal.classList.add('active');
+            });
+
+            // Close checkout modal
+            closeCheckoutModal.addEventListener('click', function () {
+                checkoutModal.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+
+            // Payment method selection
+            const paymentMethods = document.querySelectorAll('input[name="payment"]');
+            const paymentDetails = document.querySelectorAll('.payment-details');
+
+            paymentMethods.forEach(method => {
+                method.addEventListener('change', function () {
+                    paymentDetails.forEach(detail => {
+                        detail.classList.remove('active');
+                    });
+                    document.getElementById(`${this.value}-details`).classList.add('active');
+                });
+            });
+
+            // Order confirmation
+            const confirmationModal = document.querySelector('.confirmation-modal');
+            const closeConfirmationModal = document.querySelector('.confirmation-modal .close-modal');
+            const continueShoppingBtn = document.querySelector('.continue-shopping-btn');
+            const orderNumber = document.querySelector('.order-number');
+
+            // Submit checkout form
+            checkoutForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Generate random order number
+                const randomOrderNumber = 'ORD-' + Math.floor(Math.random() * 1000000);
+                orderNumber.textContent = randomOrderNumber;
+
+                // Show confirmation modal
+                checkoutModal.classList.remove('active');
+                confirmationModal.classList.add('active');
+
+                // Clear cart
+                cart = [];
+                updateCart();
+            });
+
+            // Close confirmation modal
+            closeConfirmationModal.addEventListener('click', function () {
+                confirmationModal.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+
+            // Continue shopping button
+            continueShoppingBtn.addEventListener('click', function () {
+                confirmationModal.classList.remove('active');
+                overlay.classList.remove('active');
+            });
+
+            // Initialize cart
+            updateCart();
+        });
+    </script>
+</body>
+
+</html>
